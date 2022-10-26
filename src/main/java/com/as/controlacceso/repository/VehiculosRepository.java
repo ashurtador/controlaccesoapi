@@ -1,12 +1,12 @@
 package com.as.controlacceso.repository;
 
 import com.as.controlacceso.models.Peatones;
+import com.as.controlacceso.models.Vehiculos;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface PeatonesRepository extends JpaRepository<Peatones,String> {
+public interface VehiculosRepository extends JpaRepository<Vehiculos, String> {
 
-    Peatones getByCedula(String cedula);
-    List<Peatones> getByUnidad(String unidad);
+    List<Vehiculos> getByUnidad(String unidad);
 }
