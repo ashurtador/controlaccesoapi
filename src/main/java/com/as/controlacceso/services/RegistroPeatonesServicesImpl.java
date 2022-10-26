@@ -3,6 +3,7 @@ package com.as.controlacceso.services;
 import com.as.controlacceso.models.RegistroPeatones;
 import com.as.controlacceso.repository.RegistroPeatonesRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class RegistroPeatonesServicesImpl implements RegistroPeatonesServices{
@@ -15,6 +16,7 @@ public class RegistroPeatonesServicesImpl implements RegistroPeatonesServices{
 
     @Override
     public String createRegistroPeaton(RegistroPeatones registroPeatones) {
+        registroPeatones.setTime(LocalDateTime.now());
         this.registroPeatonesRepository.save(registroPeatones);
         return "Peaton Registrado Exitosamente";
     }

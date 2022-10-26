@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -20,16 +22,7 @@ public class RegistroPeatones {
     private String cedula;
 
     @Column
-    private String unidad;
+    private LocalDateTime time;
 
-    @Column
-    private String time;
 
-    public Long idRegistroPeatones() {
-        return idRegistroPeatones;
-    }
-
-    public void idRegistroPeatones(Long idRegistroPeatones) {
-        this.idRegistroPeatones = idRegistroPeatones;
-    }
 }

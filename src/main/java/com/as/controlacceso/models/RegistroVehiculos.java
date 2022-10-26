@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -20,16 +21,6 @@ public class RegistroVehiculos {
     private String placa;
 
     @Column
-    private String unidad;
+    private LocalDateTime time;
 
-    @Column
-    private String time;
-
-    public Long idRegistroVehiculos() {
-        return idRegistroVehiculos;
-    }
-
-    public void idRegistroVehiculos(Long idRegistroVehiculos) {
-        this.idRegistroVehiculos = idRegistroVehiculos;
-    }
 }

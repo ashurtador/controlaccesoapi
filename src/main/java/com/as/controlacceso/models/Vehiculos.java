@@ -16,7 +16,7 @@ public class Vehiculos {
 
     @Id
     @Column
-    private String placa;
+    private Vehiculos placa;
 
     @Column
     private String unidad;
