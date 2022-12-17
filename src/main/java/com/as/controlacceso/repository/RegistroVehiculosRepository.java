@@ -11,5 +11,4 @@ public interface RegistroVehiculosRepository extends JpaRepository<RegistroVehic
 
     List<RegistroVehiculos> getByPlaca(String placa);
 
-    List<RegistroVehiculos> getByUnidad(String unidad);
 }

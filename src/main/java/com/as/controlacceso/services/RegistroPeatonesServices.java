@@ -11,5 +11,4 @@ public interface RegistroPeatonesServices {
 
     List<RegistroPeatones> getRegistroPeatonesByCedula(String cedula);
 
-    List<RegistroPeatones> getRegistroPeatonesByUnidad(String unidad);
 }

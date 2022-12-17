@@ -11,5 +11,4 @@ public interface RegistroVehiculosServices {
 
     List<RegistroVehiculos> getRegistroVehiculosByPlaca(String placa);
 
-    List<RegistroVehiculos> getRegistroVehiculosByUnidad(String unidad);
 }

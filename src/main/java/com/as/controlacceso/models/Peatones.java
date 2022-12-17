@@ -14,24 +14,17 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Peatones {
-
     @Id
     @Column
     private String cedula;
-
     @Column
     private String nombres;
-
     @Column
     private String apellidos;
-
     @Column
     private String unidad;
-
     @Column
     private String residenteVisitante;
-
     @Column
     private String vehiculo;
-
 }

@@ -2,10 +2,12 @@ package com.as.controlacceso.services;
 
 import com.as.controlacceso.models.RegistroPeatones;
 import com.as.controlacceso.repository.RegistroPeatonesRepository;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class RegistroPeatonesServicesImpl implements RegistroPeatonesServices{
 
     private final RegistroPeatonesRepository registroPeatonesRepository;
@@ -29,13 +31,4 @@ public class RegistroPeatonesServicesImpl implements RegistroPeatonesServices{
         return listaRegistroPeatones;
     }
 
-    @Override
-    public List<RegistroPeatones> getRegistroPeatonesByUnidad(String unidad) {
-
-        List<RegistroPeatones> listaRegistroPeatones =this.registroPeatonesRepository.getByUnidad(unidad);
-
-        return listaRegistroPeatones;
     }
-
-
-}

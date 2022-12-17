@@ -10,6 +10,5 @@ public interface RegistroPeatonesRepository extends JpaRepository<RegistroPeaton
 
     List<RegistroPeatones> getByCedula(String cedula);
 
-    List<RegistroPeatones> getByUnidad(String unidad);
 
 }

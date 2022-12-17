@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/controlacceso")
+@CrossOrigin(origins = "*")
 public class RegistroPeatonesController {
 
     private final RegistroPeatonesServices registroPeatonesServices;
@@ -26,8 +27,4 @@ public class RegistroPeatonesController {
         return this.registroPeatonesServices.getRegistroPeatonesByCedula(cedula);
     }
 
-    @GetMapping("/getRegistroPeatonByUnidad/{unidad}")
-    public List<RegistroPeatones> getRegistroPeatonesByUnidad(@PathVariable("unidad") String unidad){
-        return this.registroPeatonesServices.getRegistroPeatonesByUnidad(unidad);
-    }
 }
